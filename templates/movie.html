@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ content.title }} - Marvel Wiki</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ content.title }}</h1>
+    </header>
+    <main>
+        <h2>Description</h2>
+        <p>{{ content.description }}</p>
+        <h2>Release Date</h2>
+        <p>{{ movie.Released }}</p>
+        <h2>IMDb Rating</h2>
+        <p>{{ movie.imdbRating }}</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Marvel Wiki</p>
+    </footer>
+</body>
+</html>

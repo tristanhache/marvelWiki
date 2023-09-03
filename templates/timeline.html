@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Timeline - Marvel Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Marvel Timeline</h1>
+    </header>
+    <main>
+        <ul class="timeline">
+            {% for entry in timeline_data %}
+            <li>
+                <h2>{{ entry.title }}</h2>
+                <p class="date">{{ entry.date }}</p>
+                <p>{{ entry.description }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Marvel Wiki</p>
+    </footer>
+</body>
+</html>

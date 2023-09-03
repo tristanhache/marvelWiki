@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Wiki</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Marvel Wiki</h1>
+    </header>
+    <main>
+        <h2>Marvel Content</h2>
+        <ul class="content-list">
+            {% for item in content %}
+            <li>
+                <h3>
+                    <a href="/content/{{ loop.index - 1 }}">
+                        {{ item.title }}
+                        {% if item.type == "movie" %}
+                            (Movie)
+                        {% elif item.type == "series" %}
+                            (Series)
+                        {% endif %}
+                    </a>
+                </h3>
+                <p>{{ item.description }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Marvel Wiki</p>
+    </footer>
+</body>
+</html>
