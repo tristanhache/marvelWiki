@@ -1,4 +1,3 @@
-/* Add your CSS styles for the timeline here */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -21,33 +20,6 @@ main {
     padding: 20px;
 }
 
-.timeline {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 20px;
+.skrull {
+    font-size: large;
 }
-
-.timeline-event {
-    background-color: #fff;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin-right: 20px;
-    min-width: 300px;
-}
-
-.event-content {
-    padding: 20px;
-}
-
-h2 {
-    margin-top: 0;
-}
-
-.date {
-    color: #888;
-    margin-bottom: 5px;
-}
-
-/* Adjust styles as needed for better visual appeal */
