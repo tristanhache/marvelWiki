@@ -7,30 +7,32 @@ body, h1, h2, p, ul, li {
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f0f0f0;
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #0f6113;
+    color: #fff;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-article {
-    background-color: #ffffff;
+section {
+    background-color: #fff;
     padding: 20px;
     margin: 20px;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2 {
-    color: #333;
+    color: #0f6113;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 ul {
@@ -40,7 +42,7 @@ ul {
 
 footer {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #0f6113;
+    color: #fff;
     padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
