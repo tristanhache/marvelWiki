@@ -12,9 +12,27 @@ content = [
     {"title": "Loki", "description": "Loki's adventures after Endgame.", "type": "series"},
 ]
 
-timeline_data = [
+timeline_data_phase1 = [
     {"title": "Iron Man", "date": "2008-05-02", "description": "Tony Stark becomes Iron Man."},
     {"title": "The Incredible Hulk", "date": "2008-06-13", "description": "Bruce Banner transforms into the Hulk."},
+    # Add more entries for other movies and series
+]
+
+timeline_data_phase2 = [
+    {"title": "Iron Man 3", "date": "2013-05-03", "description": "Tony Stark faces the Mandarin."},
+    {"title": "Thor: The Dark World", "date": "2013-11-08", "description": "Thor battles Malekith."},
+    # Add more entries for other movies and series
+]
+
+timeline_data_phase3 = [
+    {"title": "Captain America", "date": "2008-05-02", "description": "Tony Stark becomes Iron Man."},
+    {"title": "The Avengers", "date": "2008-06-13", "description": "Bruce Banner transforms into the Hulk."},
+    # Add more entries for other movies and series
+]
+
+timeline_data_phase4 = [
+    {"title": "Endgame", "date": "2008-05-02", "description": "Tony Stark becomes Iron Man."},
+    {"title": "Infinity War", "date": "2008-06-13", "description": "Bruce Banner transforms into the Hulk."},
     # Add more entries for other movies and series
 ]
 
@@ -69,7 +87,11 @@ def index():
 
 @app.route('/timeline')
 def timeline():
-    return render_template('timeline.html', timeline_data=timeline_data)
+    return render_template('timeline.html',
+                           timeline_data_phase1=timeline_data_phase1,
+                           timeline_data_phase2=timeline_data_phase2,
+                           timeline_data_phase3=timeline_data_phase3,
+                           timeline_data_phase4=timeline_data_phase4,)
 
 
 if __name__ == '__main__':
