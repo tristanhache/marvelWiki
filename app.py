@@ -10,7 +10,6 @@ content = [
     {"title": "WandaVision", "description": "Wanda and Vision's mysterious suburban life.", "type": "series"},
     {"title": "Black Panther", "description": "T'Challa returns to Wakanda as king.", "type": "movie"},
     {"title": "Loki", "description": "Loki's adventures after Endgame.", "type": "series"},
-    # Add more movies and series entries here
 ]
 
 timeline_data = [
