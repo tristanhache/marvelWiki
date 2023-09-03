@@ -3,52 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Timeline - Marvel Wiki</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>MCU Timeline</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Link your CSS file for styling -->
 </head>
 <body>
     <header>
-        <h1>Marvel Timeline</h1>
+        <h1>Marvel Cinematic Universe Timeline</h1>
     </header>
-    <!-- ... (Previous HTML code) ... -->
+    <main>
+        <!-- Phase One: The Birth of the MCU (2008 - 2012) -->
+        <section class="phase">
+            <h2>Phase One: The Birth of the MCU (2008 - 2012)</h2>
+            <ul>
+                {% for entry in phase_one_data %}
+                <li>
+                    <h3>{{ entry.title }}</h3>
+                    <p>Date: {{ entry.date }}</p>
+                    <p>{{ entry.description }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
 
-<main>
-    <!-- Phase One: The Birth of the MCU (2008 - 2012) -->
-    <section class="phase">
-        <h2>Phase One: The Birth of the MCU (2008 - 2012)</h2>
-        <ul>
-            {% for entry in phase_one_data %}
-            <li>
-                <h3>{{ entry.title }}</h3>
-                <p>Date: {{ entry.date }}</p>
-                <p>{{ entry.description }}</p>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
+        <!-- Phase Two: Expansion and Challenges (2013 - 2015) -->
+        <section class="phase">
+            <h2>Phase Two: Expansion and Challenges (2013 - 2015)</h2>
+            <ul>
+                {% for entry in phase_two_data %}
+                <li>
+                    <h3>{{ entry.title }}</h3>
+                    <p>Date: {{ entry.date }}</p>
+                    <p>{{ entry.description }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
 
-    <!-- Phase Two: Expansion and Challenges (2013 - 2015) -->
-    <section class="phase">
-        <h2>Phase Two: Expansion and Challenges (2013 - 2015)</h2>
-        <ul>
-            {% for entry in phase_two_data %}
-            <li>
-                <h3>{{ entry.title }}</h3>
-                <p>Date: {{ entry.date }}</p>
-                <p>{{ entry.description }}</p>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
+        <!-- Add more phases and entries as needed -->
 
-    <!-- Add more phases and entries as needed -->
-
-</main>
-
-<!-- ... (Remaining HTML code) ... -->
-
+    </main>
     <footer>
-        <p>&copy; 2023 Marvel Wiki</p>
+        <p>&copy; 2023 Marvel Universe</p>
     </footer>
 </body>
 </html>
