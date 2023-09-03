@@ -12,12 +12,6 @@ content = [
     {"title": "Loki", "description": "Loki's adventures after Endgame.", "type": "series"},
 ]
 
-timeline_data = [
-    {"title": "Iron Man", "date": "2008-05-02", "description": "Tony Stark becomes Iron Man."},
-    {"title": "The Incredible Hulk", "date": "2008-06-13", "description": "Bruce Banner transforms into the Hulk."},
-    # Add more entries for other movies and series
-]
-
 
 # OMDb API key (replace with your actual API key)
 OMDB_API_KEY = "6a934989"
@@ -66,12 +60,6 @@ def series(index):
 @app.route('/')
 def index():
     return render_template('index.html', content=content)
-
-@app.route('/timeline')
-def timeline():
-    return render_template('timeline.html', timeline_data=timeline_data)
-
-
 
 
 if __name__ == '__main__':
