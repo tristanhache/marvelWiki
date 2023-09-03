@@ -24,18 +24,6 @@ timeline_data_phase2 = [
     # Add more entries for other movies and series
 ]
 
-timeline_data_phase3 = [
-    {"title": "Captain America", "date": "2008-05-02", "description": "Tony Stark becomes Iron Man."},
-    {"title": "The Avengers", "date": "2008-06-13", "description": "Bruce Banner transforms into the Hulk."},
-    # Add more entries for other movies and series
-]
-
-timeline_data_phase4 = [
-    {"title": "Endgame", "date": "2008-05-02", "description": "Tony Stark becomes Iron Man."},
-    {"title": "Infinity War", "date": "2008-06-13", "description": "Bruce Banner transforms into the Hulk."},
-    # Add more entries for other movies and series
-]
-
 
 # OMDb API key (replace with your actual API key)
 OMDB_API_KEY = "6a934989"
@@ -89,9 +77,7 @@ def index():
 def timeline():
     return render_template('timeline.html',
                            timeline_data_phase1=timeline_data_phase1,
-                           timeline_data_phase2=timeline_data_phase2,
-                           timeline_data_phase3=timeline_data_phase3,
-                           timeline_data_phase4=timeline_data_phase4,)
+                           timeline_data_phase2=timeline_data_phase2,)
 
 
 if __name__ == '__main__':
