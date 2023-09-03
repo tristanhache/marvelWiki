@@ -67,5 +67,10 @@ def series(index):
 def index():
     return render_template('index.html', content=content)
 
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.html', timeline_data=timeline_data)
+
+
 if __name__ == '__main__':
     app.run(debug=True)
