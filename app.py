@@ -61,6 +61,11 @@ def series(index):
 def index():
     return render_template('index.html', content=content)
 
+@app.route('/skrull')
+def skrull():
+    return render_template('species/skrull.html')
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
